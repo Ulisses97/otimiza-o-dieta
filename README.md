@@ -29,6 +29,6 @@ pip install django
 # Rodar servidor
 python3 manage.py runserver
 
-# Rodar servidor
+# Visualizar
 acessa a rota
 http://localhost:8000/
