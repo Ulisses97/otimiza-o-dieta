@@ -1,4 +1,8 @@
-# Otimiza-o-dieta
+# TRABALHO PESQUISA OPERACIONAL
+(problema de otimização)
+
+## ÉRICA S. RODRIGUES -ULISSES BRANDÃO -VINÍCIUS  SOARES
+
 - 
 Link para o prototipo: https://www.figma.com/file/9uvqLTugzdQzhy66Xl7r6t/Pesquisa-Operacional-TP?node-id=0%3A1&t=cR3p8Gt8jTDjDVv8-1
 
