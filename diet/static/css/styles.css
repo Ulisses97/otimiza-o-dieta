@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.header {
+  background-image: url("../img/Banner.png");
+  height: 379px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.header div {
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.objetivo {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.objetivo button {
+  background-color: transparent;
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #5b5b5b;
+}
+
+.restricao {
+  margin-top: 60px;
+}
+
+.restricao .gap {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+
+  margin-top: 60px;
+}
+
+.nutriente {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.nutriente h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 116.5%;
+}
+
+.nutriente-content {
+  display: flex;
+  gap: 20px;
+}
+
+.nutriente-content div {
+  display: flex;
+  flex-direction: column;
+}
+.nutriente-content h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 116.5%;
+}
+
+.nutriente-content input {
+  width: 91px;
+  background: #e6e6e6;
+  border-radius: 6px;
+
+  border: none;
+  outline: none;
+
+  padding: 8px;
+}
+
+.funcao {
+  margin-top: 60px;
+}
+
+.funcao select {
+  background: #e6e6e6;
+  border-radius: 6px;
+
+  border: none;
+  outline: none;
+
+  padding: 8px;
+}
+
+.upload {
+  margin-top: 60px;
+}
+
+.upload button {
+  background-color: #8dcd55;
+  border-radius: 6px;
+
+  border: none;
+  outline: none;
+
+  padding: 8px;
+}
+
+.resultado {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.resultado textarea {
+  padding: 12px;
+
+  background: #e6e6e6;
+  border-radius: 6px;
+  width: 100%;
+  resize: vertical;
+
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <title>Dieta</title>
+</head>
+<body>
+
+  <div class="header">
+   <div class="container" >
+    <h1>Otimizar dieta</h1>
+    <p>Selecione os valores mínimos e máximos para os nutrientes, após carregue sua planilha para otimização</p>
+   </div>
+  </div>
+
+  <div class="container">
+    <form class="formulario" method="post">
+      {% csrf_token %}
+      <div class="objetivo">
+        <h2>Objetivo:</h2>
+        <div>
+          <button>Minimizar custo</button>
+        </div>
+      </div>
+    
+      <div class="restricao">
+        <h2>Restrições nutrícionais dos alimentos</h2>
+        
+        <div class="gap" >
+  
+          <div class="nutriente" >
+            <h3>Calorias</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input name="minCaloria" type="number">
+              </div>
+              <div>
+                <h4>Máximo</h4>
+                <input name="maxCaloria" type="number">
+              </div>
+            </div>
+          </div>
+       
+        
+          <div class="nutriente" >
+            <h3>Colesterol</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input name="minColesterol" type="number">
+              </div>
+              <div>
+                <h4>Máximo</h4>
+                <input name="maxColesterol" type="number">
+              </div>
+            </div>
+          </div>
+        
+          <div class="nutriente" >
+            <h3>Gordura</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input name="minGordura" type="number">
+              </div>
+              <div>
+                <h4>Máximo</h4>
+                <input name="maxGordura" type="number">
+              </div>
+            </div>
+          </div>
+        
+          <div class="nutriente" >
+            <h3>Sódio</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input name="minSodio" type="number">
+              </div>
+              <div>
+                <h4>Máximo</h4>
+                <input name="maxSodio" type="number">
+              </div>
+            </div>
+          </div>
+        
+          <div class="nutriente" >
+            <h3>Carboidrato</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input name="minCarboidrato" type="number">
+              </div>
+              <div>
+                <h4>Máximo</h4>
+                <input name="maxCarboidrato" type="number">
+              </div>
+            </div>
+          </div>
+        
+          <div class="nutriente" >
+            <h3>Fibras</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input  name="minFibras" type="number">
+              </div>
+              <div>
+                <h4>Máximo</h4>
+                <input name="maxFibras" type="number">
+              </div>
+            </div>
+          </div>
+        
+          <div class="nutriente" >
+            <h3>Proteina</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input name="minProteina" type="number">
+              </div>
+              <div>
+                <h4>Maximo</h4>
+                <input name="maxProteina" type="number">
+              </div>
+            </div>
+          </div>
+        
+          <div class="nutriente" >
+            <h3>Vitamina A</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input name="minVitA" type="number">
+              </div>
+              <div>
+                <h4>Máximo</h4>
+                <input name="maxVitA" type="number">
+              </div>
+            </div>
+          </div>
+        
+          <div class="nutriente" >
+            <h3>Vitamina C</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input name="minVitC" type="number">
+              </div>
+              <div>
+                <h4>Máximo</h4>
+                <input name="maxVitC" type="number">
+              </div>
+            </div>
+          </div>
+        
+          <div class="nutriente" >
+            <h3>Cálcio</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input name="minCalcio" type="number">
+              </div>
+              <div>
+                <h4>Máximo</h4>
+                <input name="maxCalcio" type="number">
+              </div>
+            </div>
+          </div>
+        
+          <div class="nutriente" >
+            <h3>Ferro</h3>
+            <div class="nutriente-content" >
+              <div>
+                <h4>Mínimo</h4>
+                <input name="minFerro" type="number">
+              </div>
+              <div>
+                <h4>Máximo</h4>
+                <input name="maxFerro" type="number">
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+        </div>
+  
+        </div>
+  
+        <div class="upload">
+          <button type="submit" >OTIMIZAR</button>
+        </div>
+  
+        <div class="resultado">
+          <h2>Resultado</h1>
+          <textarea name="" id="results" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="res">
+
+        </div>
+        
+
+    </form>
+
+  </div>
+
+  {% load static %}
+  <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
